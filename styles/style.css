@@ -1,0 +1,27 @@
+#tile {
+    width: 16px;
+    height: 16px;
+    background-color: grey;
+    flex-shrink: 1;
+}
+
+#main {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+
+}
+
+#divider {
+    background-color: black;
+    width: 20px;
+    height: 1000px;
+}
+
+#right-side {
+    display: flex;
+    flex-wrap: wrap;
+    height: 256px;
+    width: 256px;
+
+}
