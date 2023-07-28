@@ -1,9 +1,24 @@
-let rightSide = document.getElementById("right-side");
+let squares = document.getElementById("squares");
+let isMouseDown = false;
 
+squares.addEventListener("mousedown", (event) => {
+isMouseDown = true;
+})
 
-for (i = 1; i <= 256; i++) {
+squares.addEventListener("mouseup", (event) => {
+isMouseDown = false;
+})
+
+let gridSize = 256;
+
+for (i = 1; i <= gridSize; i++) {
 let childTile = document.createElement("div");
-childTile.setAttribute("id", "tile");
-rightSide.appendChild(childTile);
-};
+childTile.classList.add("tile");
 
+childTile.addEventListener("mouseover", (event) => {
+    if (isMouseDown) {
+ childTile.setAttribute("style", "background-color: blue;");
+    }
+})
+squares.appendChild(childTile);
+};
