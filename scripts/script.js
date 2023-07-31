@@ -16,6 +16,7 @@ isMouseDown = false;
 let gridSize = 10;
 createGrid();
 
+let red = document.getElementById("color-red")
 let myRange = document.getElementById("my-range");
 console.log(myRange);
 
@@ -40,7 +41,7 @@ function createGrid() {
 
         childTile.addEventListener("mouseover", (event) => {
             if (isMouseDown) {
-            childTile.style.backgroundColor = "blue";
+            childTile.style.backgroundColor = "black";
             }
         })
         

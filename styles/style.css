@@ -14,6 +14,7 @@ html {
     display: flex;
     justify-content: space-around;
     gap: 30px;
+    align-items: center;
 
 }
 
@@ -27,6 +28,12 @@ html {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    padding: 10px;
+    background-color:rgb(206, 206, 206);
+    border: 3px solid black;
+    
 }
 
 #right-side {
@@ -53,6 +60,7 @@ header {
         flex-wrap: wrap;
         height: 500px;
         width: 500px;
+        border: 3px ;
     }
 
     #resize {
@@ -61,5 +69,13 @@ header {
     }
 
     #my-range {
-        
+        width: 300px;
+        background-color: grey;
+    }
+
+    .my-footer {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 30px;
     }
