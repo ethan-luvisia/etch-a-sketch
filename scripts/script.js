@@ -1,4 +1,8 @@
 // Coloring on pad code
+let colorRed = document.getElementById("color-red");
+let colorGreen = document.getElementById("color-green");
+let colorBlack = document.getElementById("color-black");
+
 
 let squares = document.getElementById("squares");
 let isMouseDown = false;
@@ -16,7 +20,6 @@ isMouseDown = false;
 let gridSize = 10;
 createGrid();
 
-let red = document.getElementById("color-red")
 let myRange = document.getElementById("my-range");
 console.log(myRange);
 
@@ -43,6 +46,30 @@ function createGrid() {
             if (isMouseDown) {
             childTile.style.backgroundColor = "black";
             }
+        })
+
+        colorRed.addEventListener ("click", (event) => {
+            childTile.addEventListener("mouseover", (event) => {
+                if (isMouseDown) {
+                childTile.style.backgroundColor = "red";
+                }
+            })
+        })
+
+        colorGreen.addEventListener ("click", (event) => {
+            childTile.addEventListener("mouseover", (event) => {
+                if (isMouseDown) {
+                childTile.style.backgroundColor = "green";
+                }
+            })
+        })
+
+        colorBlack.addEventListener ("click", (event) => {
+            childTile.addEventListener("mouseover", (event) => {
+                if (isMouseDown) {
+                childTile.style.backgroundColor = "black";
+                }
+            })
         })
         
         squares.appendChild(childTile);

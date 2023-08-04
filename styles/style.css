@@ -27,12 +27,14 @@ html {
 #left-side {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
+    gap: 30px;
     height: 300px;
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
     background-color:rgb(206, 206, 206);
     border: 3px solid black;
+    margin-left: 50px;
     
 }
 
@@ -60,7 +62,7 @@ header {
         flex-wrap: wrap;
         height: 500px;
         width: 500px;
-        border: 3px ;
+        border: 3px solid black ;
     }
 
     #resize {
@@ -70,12 +72,45 @@ header {
 
     #my-range {
         width: 300px;
-        background-color: grey;
+        -webkit-appearance: none;
+        background-color: transparent;
+        cursor: pointer;
+        
+        background: #000000;
+        height: 0.25rem;
+
     }
 
     .my-footer {
         display: flex;
         justify-content: center;
+        align-items: space-around;
         gap: 40px;
-        margin-top: 30px;
+        margin-top: 50px;
+    }
+
+    #copyright {
+        display: flex;
+        align-items: center;
+    }
+
+    button {
+        background-color: rgb(206, 206, 206);
+        border: 2px solid black;
+        border-radius: 6px;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: #d2d2d2;
+        height: 1.5rem;
+        width: 1.5rem;
+        border: 2px solid black;
+        border-radius: 100%;
+    }
+
+    img {
+        width: 100px;
+        height: auto;
     }
